@@ -1,24 +1,8 @@
 import React, { useContext, useState } from 'react'
-import { useParams } from "react-router";
 import {Link} from 'react-router-dom'
 import CivilizationContext from '../context/Civilization/CivilizationContext';
 
-const Civilization = (props) => {
-    /*
-    //const {id} = useParams()
-    const id = props.id
-    const[civilization, setcivilization] = useState({})
-    React.useEffect(()=>{
-
-        console.log(id);        
-
-        const obtenerDato = async()=>{
-            const data = await fetch(`https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${id}`)
-            const user = await data.json()
-            setcivilization(user)
-        }
-        obtenerDato()
-    },[id])*/
+const Civilization = () => {
 
     const {civilization} = useContext(CivilizationContext)
 
